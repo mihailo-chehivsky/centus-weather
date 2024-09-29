@@ -36,6 +36,22 @@ sail up -d
 sail artisan migrate
 ```
 
+## Cron jobs
+
+### Run the scheduled commands
+
+```cronexp
+* * * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1
+```
+
+## Workers
+
+### Processing jobs on the queue as a daemon
+
+```shell
+sail artisan queue:work
+```
+
 ## Testing
 
 ### Run tests

@@ -2,7 +2,7 @@ services:
     composer:
         image: composer
         volumes:
-            - '.:/var/www/html'
+            - '.:/app'
 
     laravel.test:
         build:
